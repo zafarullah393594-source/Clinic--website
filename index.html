@@ -1,24 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        body {background-color: #e0f7fa; text-align: center; font-family: Arial; padding: 30px;}
-        h1 {color: #00796b; font-size: 32px;}
-        button {background-color: #00796b; color: white; padding: 12px 25px; border: none; border-radius: 8px;}
-        input {padding: 10px; margin: 8px; width: 250px;}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Ali Clinic</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f7ff;
+      background-image: url('https://www.transparenttextures.com/patterns/floral.png');
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #00796b;
+    }
+    .btn {
+      background-color: #009688;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .form-box {
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input {
+      padding: 8px;
+      margin: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+  </style>
 </head>
 <body>
-    <h1>Dr. Ali Clinic</h1>
-    <p>Bio students ke liye best clinic 🏥</p>
-    <button>Appointment Book Karein</button>
-    <p><b>Contact:</b> 0300-1234567</p>
-    <p><b>Address:</b> Main Gulberg, Lahore</p>
+  <h1>Dr. Ali Clinic</h1>
+  <p>Bio students ke liye best clinic 🏥</p>
+  <button class="btn">Appointment Book Karein</button>
+  
+  <p><b>Contact:</b> 0300-1234567</p>
+  <p><b>Address:</b> Main Gulberg, Lahore</p>
+
+  <div class="form-box">
     <h2>Appointment Book Karein</h2>
     <form>
-      <input type="text" placeholder="Apna Naam"><br>
-      <input type="number" placeholder="Phone Number"><br>
-      <button type="submit">Send</button>
+      <input type="text" placeholder="Apna Naam" required><br>
+      <input type="text" placeholder="Phone Number" required><br>
+      <button class="btn" type="submit">Send</button>
     </form>
+  </div>
 </body>
 </html>
